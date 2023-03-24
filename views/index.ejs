@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Ilustreteca - Início</title>
 
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
-<body>
-    <h1>Base</h1>
+<body id="body">
+    
+    <nav class="nav-bar">
+        <div class="nav-opcoes">
+            <button id="nav-button"><i class="bi bi-list"></i>OPÇÕES</button>
+        </div>
+
+        <div class="logo">
+            <img src="./assets/images/logo/logo.png" alt="">
+            <h1 class="titulo">ILUSTRETECA</h1>
+        </div>
+        
+        <button class="theme-changer">
+            <i class="bi bi-sun-fill"></i>
+        </button>
+    </nav>
+
+    <div class="opt-buttons-div">
+        <button class="opt-buttons" id="nav-button1">
+            <a href="#">Pendências</a>
+        </button>
+        <button class="opt-buttons" id="nav-button2">
+            <a href="#">Empréstimos</a>
+        </button>
+        <button class="opt-buttons" id="nav-button3">
+            <a href="#">Livros</a>
+        </button>
+        <button class="opt-buttons" id="nav-button3">
+            <a href="#">Estatísticas</a>
+        </button>
+    </div>
+
+    <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
