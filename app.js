@@ -1,4 +1,19 @@
 // Imports
-import fastify from 'fastify';
-import ejs from 'ejs';
+const express = require('express');
+const app = express();
+const ejs = require('ejs');
 
+// CONFIG
+const PORT = 6999;
+app.set('view engine', 'ejs');
+app.use(express.static('public/'));
+
+// ROTAS
+app.get('/', (req, res) => {
+    res.render('index');
+});
+
+// SERVER 
+app.listen(PORT, () => {
+    console.log(`O servidor agora está rodando em: http://localhost:${PORT}` );
+})
