@@ -1,4 +1,6 @@
 /* Definições gerais do site (Resetar estilo, Definir aparências gerais de alguns elementos, etc..) */
+@import url(./fonts.css);
+@import url(./animations.css);
 
 :root {
     /* Variáveis, usar 'var()' para definir cores do site mais facilmente */
@@ -14,10 +16,133 @@
     padding: 0;
 }
 
-body {
-    background-color: var(--cor-fundo);
+
+
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+
+font-family: 'Butler';
+color: #FFF;
 }
 
-buttons {
-    border-inline-style: unset;
+body {
+height: 100%;
+
+background: url("../images/backgrounds/aiaiai.png");
+background-repeat: no-repeat;
+background-size: cover;
 }
+/* Fim da seção */
+
+/* Nav bar */
+.nav-bar{
+height: 4rem;
+width: 100%;
+background-color: green;
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+} 
+
+.nav-bar .nav-opcoes {
+height: 100%;
+width: 14rem;
+
+display: flex;
+justify-content: center;
+place-items: center;
+margin: 0 .5rem 0 0;
+}   
+
+.nav-bar .nav-opcoes button {
+width: 10rem;
+height: 3rem;
+font-size: 15pt;
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+gap: 1.1rem;
+
+background-color: #2f58e0;
+color: #FFF;
+
+border: none;
+border-radius: .4rem;
+
+transition: .5s;
+animation-timing-function: ease-in-out;
+}
+
+.nav-bar .nav-opcoes button:hover{
+box-shadow:  0rem 0rem 1rem #2f58e0;
+font-size: 15.2pt;
+} 
+
+.nav-bar .nav-opcoes i {
+font-size: 2rem;
+color: #FFF;
+padding: 0 0 0 .5rem;
+}
+/* Logo */
+
+.nav-bar .logo {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-direction: row;
+}
+
+.nav-bar .logo img {
+    height: 3rem;
+    margin: 0 1rem 0 0;
+}
+/* Fim da seção logo */
+
+.theme-changer {
+    height: 2.5rem;
+    width: 2.5rem;
+    
+    align-self: center;
+    margin: 0 .75rem 0 auto;
+
+    border-radius: .4rem;
+    border: none;
+    background-color: #2f58e0;
+}
+
+/* Opções da nav */
+
+.opt-buttons-div {
+    position: relative;
+    width: 14rem;
+    height: 0;
+    
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #2f58e0;
+    overflow: hidden;
+}
+
+.opt-buttons-div .opt-buttons{
+    width: 12rem;
+    height: 4rem;
+
+    background-color: #2748b4;
+
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.1em;
+}
+.opt-buttons-div .opt-buttons a {
+    text-decoration: none;
+}
+/* Fim da nav bar */
