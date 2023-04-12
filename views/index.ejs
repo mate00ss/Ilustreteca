@@ -11,7 +11,7 @@
     <script src="js/main.js" defer></script>
 </head>
 <body id="body">
-    
+
     <nav class="nav-bar">
         <div class="nav-opcoes">
             <button id="nav-button"><i class="bi bi-list"></i>OPÇÕES</button>
@@ -28,19 +28,14 @@
     </nav>
 
     <div class="opt-buttons-div">
-        <button class="opt-buttons" id="nav-button1">
-            <a href="#">Pendências</a>
-        </button>
-        <button class="opt-buttons" id="nav-button2">
-            <a href="#">Empréstimos</a>
-        </button>
-        <button class="opt-buttons" id="nav-button3">
-            <a href="#">Livros</a>
-        </button>
-        <button class="opt-buttons" id="nav-button3">
-            <a href="#">Estatísticas</a>
-        </button>
+        <button onclick="navigate('/pendencias')" class="opt-buttons" id="nav-button1">Pendências</button>
+        <button onclick="navigate('/emprestimo')" class="opt-buttons" id="nav-button2">Empréstimos</button>
+        <button onclick="navigate('/livros')" class="opt-buttons" id="nav-button3">Livros</button>
+        <button onclick="navigate('/estatisticas')" class="opt-buttons" id="nav-button3">Estatísticas</button>
     </div>
 
+    <section class="atalho">
+        <img src="" alt="">
+    </section>
 </body>
 </html>
