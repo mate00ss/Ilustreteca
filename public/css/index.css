@@ -142,7 +142,14 @@ padding: 0 0 0 .5rem;
     border: none;
     font-size: 1.1em;
 }
+
+.opt-buttons-div .opt-buttons:hover{
+    cursor: pointer;
+}
+
 .opt-buttons-div .opt-buttons a {
     text-decoration: none;
 }
+
+
 /* Fim da nav bar */
