@@ -12,7 +12,7 @@ menu_button.addEventListener('click', function() {
         
         //ABRINDO O MENU DE OPÇÕES
         opt_buttons_div.style.display = "flex"
-        opt_buttons_div.style.animation = "opt-buttons-div-open .8s ease-out 0s 1 forwards";
+        opt_buttons_div.style.animation = "opt-buttons-div-open .5s ease-out 0s 1 forwards";
 
         //DIMINUINDO A DIV DE CONTEÚDO DO SITE
         atalho.style.margin = "1rem 1rem 1rem 15rem"
@@ -25,7 +25,7 @@ menu_button.addEventListener('click', function() {
         menu_button.style.borderRadius = ".4rem"
         
         //FECHANDO O MENU DE OPÇÕES
-        opt_buttons_div.style.animation = "opt-buttons-div-close .8s ease-out 0s 1 forwards";
+        opt_buttons_div.style.animation = "opt-buttons-div-close .5s ease-out 0s 1 forwards";
 
         //AUMENTANDO A DIV DE CONTEÚDO DO SITE
         atalho.style.margin = "1rem 1rem 1rem 1rem"
