@@ -119,7 +119,7 @@ padding: 0 0 0 .5rem;
 /* Opções da nav */
 
 .opt-buttons-div {
-    position: relative;
+    position: absolute;
     width: 14rem;
     height: 0;
     
@@ -142,7 +142,21 @@ padding: 0 0 0 .5rem;
     border: none;
     font-size: 1.1em;
 }
+
+.opt-buttons-div .opt-buttons:hover{
+    cursor: pointer;
+}
+
 .opt-buttons-div .opt-buttons a {
     text-decoration: none;
+}
+
+.atalho {
+    height: calc(100% - 6rem);
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    
+    background-color: #2748b4;
+    transition: .5s;
 }
 /* Fim da nav bar */
