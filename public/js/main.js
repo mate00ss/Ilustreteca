@@ -22,7 +22,7 @@ menu_button.addEventListener('click', function() {
         //DIMINUINDO O TAMANHO DO BOTÃO DA NAV
         menu_button.style.height = "3rem"
         menu_button.style.width = "10rem"
-        menu_button.style.borderRadius = ".4rem"
+        menu_button.style.borderRadius = ".8rem"
         
         //FECHANDO O MENU DE OPÇÕES
         opt_buttons_div.style.animation = "opt-buttons-div-close .5s ease-out 0s 1 forwards";

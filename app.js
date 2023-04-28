@@ -12,6 +12,9 @@ app.use(express.static('public/'));
 app.get('/', (req, res) => {
     res.render('index');
 });
+app.get('/fichas', (req, res) => {
+    res.render('tela_fichas')
+})
 
 // SERVER 
 app.listen(PORT, () => {
