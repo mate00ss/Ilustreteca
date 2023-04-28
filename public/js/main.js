@@ -40,5 +40,6 @@ let theme_button = document.querySelector('.theme-changer');
 
 
 theme_button.addEventListener('click', function() {
-    nav.style.backgroundColor = "#f0f"
+    nav.style.backgroundColor = "#f8a"
+    nav.style.transition = ".5s"
 })
