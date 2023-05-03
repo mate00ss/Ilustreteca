@@ -77,12 +77,16 @@
         width: 10rem;
         margin: -2rem 0 0 2rem;
         z-index: -1;
+
+        border-radius: .5rem;
     }
     100% {
         height: calc(100% - 4rem);
         width: 14rem;
         margin: 0;
         z-index: 0;
+
+        border-radius: 0;
     }
 }
 
@@ -92,12 +96,16 @@
         width: 14rem;
         margin: 0;
         z-index: 0;
+
+        border-radius: 0;
     }
     100% {
         z-index: -1;
         height: 0;
         width: 10rem;
         margin: -2rem 0 0 2rem;
+
+        border-radius: .5rem;
     }
 }
 
@@ -161,7 +169,7 @@ border: none;
 border-radius: .8rem;
 
 transition: .5s;
-animation-timing-function: ease-in-out;
+animation-timing-function: ease-out;
 }
 
 .nav-bar .nav-opcoes button:hover{
@@ -218,6 +226,8 @@ padding: 0 0 0 .5rem;
 }
 
 .opt-buttons-div .opt-buttons{
+    opacity: 0;
+
     width: 12rem;
     height: 4rem;
 
@@ -226,6 +236,8 @@ padding: 0 0 0 .5rem;
     border-radius: .5rem;
     border: none;
     font-size: 1.1em;
+
+    transition: .5s;
 }
 
 .opt-buttons-div .opt-buttons:hover{
