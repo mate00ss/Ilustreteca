@@ -6,10 +6,12 @@
     /* Variáveis, usar 'var()' para definir cores do site mais facilmente */
     --cor-principal: #1A9053;
     --cor-secundaria: #E9792D;
+    --cor-borda-botao: #71c89a;
     --cor-destaque: ;
     --cor-fundo: #F99;
-    --fundo-ficha-normal: #C7E6C7;
-    --fundo-ficha-atraso: #F6D2B8; 
+    --cor-botao-nav: #00BF63;
+    /* --fundo-ficha-normal: #C7E6C7;
+    --fundo-ficha-atraso: #F6D2B8;  */
     --cor-botao-ficha-normal: #;
 }
 
@@ -75,8 +77,8 @@
     0% {
         height: 0;
         width: 10rem;
-        margin: -2rem 0 0 2rem;
-        z-index: -1;
+        margin: 0rem 0 0 2rem;
+        z-index: 1;
 
         border-radius: .5rem;
     }
@@ -84,7 +86,7 @@
         height: calc(100% - 4rem);
         width: 14rem;
         margin: 0;
-        z-index: 0;
+        z-index: 1;
 
         border-radius: 0;
     }
@@ -95,7 +97,7 @@
         height: calc(100% - 4rem);
         width: 14rem;
         margin: 0;
-        z-index: 0;
+        z-index: -1;
 
         border-radius: 0;
     }
@@ -116,7 +118,7 @@ box-sizing: border-box;
 padding: 0;
 margin: 0;
 
-font-family: 'Butler';
+font-family: 'Open Sans';
 color: #FFF;
 }
 
@@ -162,10 +164,10 @@ align-items: center;
 justify-content: flex-start;
 gap: 1.1rem;
 
-background-color: #2f58e0;
+background-color: #FFF0;
 color: #FFF;
 
-border: none;
+border: .15rem solid var(--cor-borda-botao);
 border-radius: .8rem;
 
 transition: .5s;
@@ -173,7 +175,7 @@ animation-timing-function: ease-out;
 }
 
 .nav-bar .nav-opcoes button:hover{
-box-shadow:  0rem 0rem 1rem #2f58e0;
+box-shadow:  0rem 0rem 1rem #ffffff00;
 font-size: 15.2pt;
 } 
 
@@ -206,13 +208,14 @@ padding: 0 0 0 .5rem;
 
     border-radius: .4rem;
     border: none;
-    background-color: #2f58e0;
+    background-color: var(--cor-botao-nav);
 }
 
 /* Opções da nav */
 
 .opt-buttons-div {
     position: absolute;
+    top: 4rem;
     width: 14rem;
     height: 0;
     
@@ -221,7 +224,7 @@ padding: 0 0 0 .5rem;
     justify-content: space-around;
     align-items: center;
 
-    background-color: #2f58e0;
+    background-color: var(--cor-borda-botao);
     overflow: hidden;
 }
 
@@ -231,7 +234,7 @@ padding: 0 0 0 .5rem;
     width: 12rem;
     height: 4rem;
 
-    background-color: #2748b4;
+    background-color: var(--cor-botao-nav);
 
     border-radius: .5rem;
     border: none;
