@@ -13,6 +13,7 @@
     /* --fundo-ficha-normal: #C7E6C7;
     --fundo-ficha-atraso: #F6D2B8;  */
     --cor-botao-ficha-normal: #;
+    --cor-principal-2: #71c89a;
 }
 
 
@@ -173,9 +174,12 @@ border-radius: .8rem;
 transition: .5s;
 animation-timing-function: ease-out;
 }
+button svg{
+    margin: 0% 0% 0% 7%;
+}
 
 .nav-bar .nav-opcoes button:hover{
-box-shadow:  0rem 0rem 1rem #ffffff00;
+box-shadow:  0rem 0rem 1rem rgba(255, 255, 255, .3);
 font-size: 15.2pt;
 } 
 
@@ -241,6 +245,8 @@ padding: 0 0 0 .5rem;
     font-size: 1.1em;
 
     transition: .5s;
+
+    color: var(--cor-secundaria);
 }
 
 .opt-buttons-div .opt-buttons:hover{
