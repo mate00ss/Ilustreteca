@@ -13,28 +13,29 @@
 <body id="body">
     <nav class="nav-bar">
         <div class="nav-opcoes">
-            <button id="nav-button"><svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="#E9792D" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>OPÇÕES</button>
+            <button id="nav-button">
+                <i class="bi bi-list" style="color: #71c89a; font-size: 1.5rem;"></i>OPÇÕES
+            </button>
         </div>
         <div class="logo">
             <img src="images/icon.png" alt="">
             <h1 class="titulo"><a href="/" style="text-decoration: none;">ILUSTRETECA</a></h1>
         </div>
         <button class="theme-changer">
-            <i class="bi bi-gear"></i>
+            <i class="bi bi-gear" style="height: 2rem;"></i>
         </button>
     </nav>
 
     <div class="opt-buttons-div">
+        <button onclick="navigate('')" class="opt-buttons" id="nav-button1">Início</button>
         <button onclick="navigate('fichas')" class="opt-buttons" id="nav-button1">Fichas</button>
-        <!-- <button onclick="navigate('emprestimo')" class="opt-buttons" id="nav-button2">Empréstimos</button> -->
         <button onclick="navigate('livros')" class="opt-buttons" id="nav-button3">Livros</button>
         <button onclick="navigate('estatisticas')" class="opt-buttons" id="nav-button3">Estatísticas</button>
     </div>
 
     <section class="atalho">
         <img src="" alt="">
+        
     </section>
 </body>
 </html>
