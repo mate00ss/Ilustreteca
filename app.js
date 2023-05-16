@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 const ejs = require('ejs');
 const AddLivro = require('./models/AddLivro');
-const { json } = require('sequelize');
 
 // CONFIG
 const PORT = 6999;
