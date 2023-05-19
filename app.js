@@ -13,7 +13,15 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 app.get('/fichas', (req, res) => {
-    res.render('tela_fichas')
+    res.render('tela_fichas');
+});
+app.get('/livros', (req, res) => {
+    res.send('vai morre');
+    // res.render('tela_fichas');
+});
+app.get('/estatisticas', (req, res) => {
+    res.send('vai morre');
+    // res.render('tela_fichas');
 })
 
 // SERVER 

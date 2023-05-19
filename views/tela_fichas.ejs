@@ -10,7 +10,6 @@
     <script src="js/main.js" defer></script>
 </head>
 <body id="body">
-
     <nav class="nav-bar">
         <div class="nav-opcoes">
             <button id="nav-button">
@@ -37,15 +36,22 @@
 
     <div class="filtro">
         <form action="#" class="filtro-form">
-            <select name="filtro" id="filter" class="filter">
-                <option value=""><i class="bi bi-list-task"></i>filtro</option>
-                <option value="comunidade">Comunidade</option>
-                <option value="alunos">Alunos</option>
-                <option value="prof">Professores</option>
+            <select name="" id="filter" class="filter">
+                <option value="" disabled hidden>
+                    FILTRO
+                    <i class="bi bi-caret-down-fill" style="color: black;"></i>
+                </option>
+                <option value="semfiltro"><span>Sem filtro</span></option>
+                <option value="comunidade"><span>Comunidade</span></option>
+                <option value="alunos"><span>Alunos</span></option>
+                <option value="prof"><span>Professores</span></option>
             </select>
         </form>
-
-        <input type="text" placeholder="" style="color: black;" class="barra-pes">
+        
+        <div class="lupa">
+            <i class="bi bi-search" style="color: black;"></i>
+            <input type="text"  placeholder="" style="color: black;" class="barra-pes">
+        </div>
     </div>
 
 </body>

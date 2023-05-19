@@ -7,24 +7,39 @@
     flex-direction: row;
 
     justify-content: space-between;
-    margin: .5rem;
+    margin: .2rem;
 }
 .filtro form select{ 
-    width: 10vw;
+    width: 12rem;
     height: 2.5rem;  
     background-color: #fff0;
+    
     color: var(--cor-secundaria);
+    text-align: center;
+    font-size: 1.2em;
+    border: .15rem solid var(--cor-secundaria);
 
-    border-color:var(--cor-secundaria) ;
-    font-size: 1.5vw;
+    transform: rotate3d(25%);
 }
+
+.filtro option{
+    background-color: #fff0;
+    color: var(--cor-secundaria);
+    border-color:var(--cor-secundaria) ;
+
+    font-size: 1em;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .filtro input{
-    width: 30vw;
+    width: 35rem;
     height: 2.5rem;  
     background: -webkit-linear-gradient(135deg, var(--cor-principal), #FFF);
     border: 2px solid green;
     
     font-size: large;
     outline: none;
-    z-index: -2;
 }

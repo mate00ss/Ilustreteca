@@ -127,9 +127,10 @@ color: #FFF;
 body {
 height: 100%;
 
-background: url("../images/backgrounds/aiaiai.png");
+background: url(../images/background/tela_fichas.png);
 background-repeat: no-repeat;
-background-size: cover;
+background-size:cover;
+
 }
 /* Fim da seção */
 
@@ -242,7 +243,7 @@ padding: 0 0 0 .5rem;
     background-color: var(--cor-botao-nav);
 
     border-radius: .5rem;
-    border: none;
+    border: 2px solid var(--cor-principal);
     font-size: 1.1em;
 
     transition: .5s;
@@ -256,4 +257,9 @@ padding: 0 0 0 .5rem;
 
 .opt-buttons-div .opt-buttons a {
     text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
 }
