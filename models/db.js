@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize');
 var database = 'ilustreteca';
-var user = 'root';
-var password = 'root123';
-var host = 'localhost';
+var user = 'ilustreteca';
+var password = 'ilustre73c4';
+var host = '20.20.1.43';
 var dialect = 'mariadb';
 
 const sql = new Sequelize(database, user, password, {
