@@ -72,44 +72,45 @@
 }
 
 
-@keyframes opt-buttons-div-open {
+@keyframes options-div-open {
     0% {
         height: 0;
         width: 10rem;
         margin: 0rem 0 0 2rem;
         z-index: 1;
 
-        border-radius: .5rem;
+        border-radius: 0 0 1rem 1rem;
+        gap: 0;
     }
     100% {
         height: calc(100% - 4rem);
         width: 14rem;
-        padding: 0 0 22rem 0;
         margin: 0;
         z-index: 1;
 
         border-radius: 0;
+        gap: 1.5rem;
     }
 }
 
-@keyframes opt-buttons-div-close {
+@keyframes options-div-close {
     0% {
         height: calc(100% - 4rem);
         width: 14rem;
-        padding: 0 0 22rem 0;
         margin: 0;
         z-index: -1;
 
         border-radius: 0;
+        gap: 1.5rem;
     }
     100% {
         z-index: -1;
         height: 0;
         width: 10rem;
-        padding: 0;
         margin: -2rem 0 0 2rem;
 
-        border-radius: .5rem;
+        border-radius: 0 0 1rem 1rem;
+        gap: 0rem;
     }
 }
 
@@ -176,9 +177,6 @@ border-radius: .8rem;
 transition: .5s;
 animation-timing-function: ease-out;
 }
-button svg{
-    margin: 0% 0% 0% 7%;
-}
 
 .nav-bar .nav-opcoes button:hover{
 box-shadow:  0rem 0rem 1rem rgba(255, 255, 255, .3);
@@ -219,7 +217,7 @@ padding: 0 0 0 .5rem;
 
 /* Opções da nav */
 
-.opt-buttons-div {
+.options-div {
     position: absolute;
     top: 4rem;
     width: 14rem;
@@ -227,18 +225,19 @@ padding: 0 0 0 .5rem;
     
     display: none;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 
     background-color: var(--cor-borda-botao);
     overflow: hidden;
 }
 
-.opt-buttons-div .opt-buttons{
+.options-div .opt-buttons{
     opacity: 0;
 
     width: 12rem;
     height: 4rem;
+    margin: 1.5rem 0 0 0;
 
     background-color: var(--cor-botao-nav);
 
@@ -251,11 +250,11 @@ padding: 0 0 0 .5rem;
     color: #FFF;
 }
 
-.opt-buttons-div .opt-buttons:hover{
+.options-div .opt-buttons:hover{
     cursor: pointer;
 }
 
-.opt-buttons-div .opt-buttons a {
+.options-div .opt-buttons a {
     text-decoration: none;
 }
 
