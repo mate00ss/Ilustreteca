@@ -8,6 +8,7 @@
 
     justify-content: space-between;
     margin: .2rem;
+    border-radius: 2;
 }
 .filtro form select{ 
     width: 12rem;
@@ -20,6 +21,9 @@
     border: .15rem solid var(--cor-secundaria);
 
     transform: rotate3d(25%);
+}
+.filter{
+    border-radius: 10px;
 }
 
 .filtro option{
@@ -34,12 +38,28 @@
     align-items: center;
 }
 
-.filtro input{
+.filtro .barra-pes input{
     width: 35rem;
-    height: 2.5rem;  
-    background: -webkit-linear-gradient(135deg, var(--cor-principal), #FFF);
-    border: 2px solid green;
+    height: 2.5rem;
+    padding: .4rem;
+
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: .5rem 0 0 .5rem;
     
     font-size: large;
     outline: none;
+}
+
+.filtro .barra-pes button[type="submit"]{
+    background-color: var(--cor-principal);
+    border: none;
+
+    align-items: center;
+    height: 2.2rem;
+    overflow: hidden;
+
+    padding: .4rem;
+    cursor: pointer;
+    margin: -5.1%;
 }

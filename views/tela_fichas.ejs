@@ -8,39 +8,17 @@
     
     <link rel="stylesheet" href="css/fichas.css">
     <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/70fb3af43c.js" crossorigin="anonymous"></script>
 </head>
+
 <body id="body">
-    <nav class="nav-bar">
-        <div class="nav-opcoes">
-            <button id="nav-button">
-                <i class="bi bi-list" style="color: #71c89a; font-size: 1.5rem;"></i>OPÇÕES
-            </button>
-        </div>
-
-        <div class="logo">
-            <img src="./assets/images/logo/logo.png" alt="">
-            <h1 class="titulo"><a href="/" style="text-decoration: none;">ILUSTRETECA</a></h1>
-        </div>
-        
-        <button class="theme-changer">
-            <i class="bi bi-gear" style="height: 2rem;"></i>
-        </button>
-    </nav>
-
-    <div class="options-div">
-        <button onclick="navigate('')" class="opt-buttons" id="nav-button1">Início</button>
-        <button onclick="navigate('fichas')" class="opt-buttons" id="nav-button1">Fichas</button>
-        <button onclick="navigate('livros')" class="opt-buttons" id="nav-button3">Livros</button>
-        <button onclick="navigate('estatisticas')" class="opt-buttons" id="nav-button3">Estatísticas</button>
-    </div>
+    
+    <%- include('partials/nav_bar.ejs') %> 
 
     <div class="filtro">
         <form action="#" class="filtro-form">
-            <select name="" id="filter" class="filter">
-                <option value="" disabled hidden>
-                    FILTRO
-                    <i class="bi bi-caret-down-fill" style="color: black;"></i>
-                </option>
+            <select name="filter" id="filter" class="filter">
+                <option value="" disabled hidden>FILTRO<i class="bi bi-caret-down-fill" style="color: black;"></i></option>
                 <option value="semfiltro"><span>Sem filtro</span></option>
                 <option value="comunidade"><span>Comunidade</span></option>
                 <option value="alunos"><span>Alunos</span></option>
@@ -48,9 +26,9 @@
             </select>
         </form>
         
-        <div class="lupa">
-            <i class="bi bi-search" style="color: black;"></i>
-            <input type="text"  placeholder="" style="color: black;" class="barra-pes">
+        <div class="barra-pes">
+                <input type="text">
+                <button type="submit"><i class="fa fa-search"></i></button>
         </div>
     </div>
 
