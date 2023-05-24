@@ -18,11 +18,11 @@ app.get('/fichas', (req, res) => {
     res.render('tela_fichas');
 });
 app.get('/livros', (req, res) => {
-    res.send('vai morre');
+    res.send('Tela - Livros');
     // res.render('tela_fichas');
 });
 app.get('/estatisticas', (req, res) => {
-    res.send('vai morre');
+    res.send('Tela - Estatísticas');
     // res.render('tela_fichas');
 })
 
