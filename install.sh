@@ -1,6 +1,8 @@
 #!/bin/bash
 DISTRO_ID_LIKE=$(awk -F= '$1=="ID_LIKE" { print $2 }' /etc/os-release)
 # DISTRO_ID=$(awk -F= '$1=="ID" { print $2 }' /etc/os-release)
+USER_NAME=$(whoami)
+printf "$USER_NAME"
 
 ## PACOTES A INSTALAR
 ## PACKAGES TO INSTALL
@@ -13,7 +15,7 @@ then
     echo "Sistema detectado: $DISTRO_ID_LIKE"
     sleep 2
 
-    PKGS=(systemctl mariadb nodejs git)
+    PKGS=(mariadb nodejs git)
     sudo pacman -Syq --noconfirm "$PKGS"
 
 elif [ "$DISTRO_ID_LIKE" == "debian" ] || [ "$DISTRO_ID_LIKE" == "ubuntu" ]
@@ -21,7 +23,7 @@ then
     echo "Sistema detectado: $DISTRO_ID_LIKE"
     sleep 2
 
-    PKGS=(systemctl mariadb-server nodejs git)
+    PKGS=(mariadb-server nodejs git)
     sudo apt-get -q install $PKGS -y
 
 fi
@@ -33,4 +35,4 @@ sudo systemctl enable mariadb && sudo systemctl start mariadb
 
 ## CRIANDO A INSTALAÇÃO DO MARIADB
 ## CREAATING MARIADB INSTALLATION
-sudo mariadb-install-db
+sudo mariadb-install-db --auth-root-authentication-method=socket --user=$USER_NAME
