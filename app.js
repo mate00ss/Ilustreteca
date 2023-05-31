@@ -28,7 +28,7 @@ app.get('/estatisticas', (req, res) => {
 
 AddLivro.findAll({
     where:{
-    N_DE_ORDEM: 690,
+        N_DE_ORDEM: 690,
 }},
 (err, data) => {
     if (err) {
