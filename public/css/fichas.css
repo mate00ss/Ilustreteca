@@ -1,7 +1,7 @@
 @import url("style.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-.filtro{
+.barra-filtragem{
     z-index: -2;
     display: flex;
     flex-direction: row;
@@ -10,7 +10,7 @@
     margin: 1rem;
     border-radius: 2;
 }
-.filtro form select{ 
+.barra-filtragem form select{ 
     width: 12rem;
     height: 2.5rem;  
     background-color: #fff0;
@@ -24,7 +24,7 @@
     border-radius: .8rem;
 }
 
-.filtro option{
+.barra-filtragem option{
     background-color: #fff0;
     color: var(--cor-secundaria);
     border-color:var(--cor-secundaria) ;
@@ -36,7 +36,7 @@
     align-items: center;
 }
 
-.filtro .barra-pes {
+.barra-filtragem .barra-pes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,7 +46,7 @@
     border-radius: .8rem;
 }
 
-.filtro .barra-pes input{
+.barra-filtragem .barra-pes input{
     border: none;
     width: 100%;
     background-color: var(--cor-principal);
@@ -55,7 +55,7 @@
     place-items: center;
     padding: 0.5rem;
 }
-.filtro .barra-pes i {
+.barra-filtragem .barra-pes i {
     display: grid;
     width: 2.5rem;
     height: 2.5em;
@@ -63,7 +63,12 @@
     place-items: center;
 }
 
-.devolucao button{
+.fichas-all {
+    background-color: #CCC8;
+    margin: 1rem;
+}
+
+.fichas-devolucao button{
     background-color: var(--cor-verde-clara);
     border: none;
     height: 2.5rem;
@@ -73,7 +78,7 @@
     font-weight: bold;
 }
 
-.devolucao button {
+.fichas-devolucao button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,19 +87,19 @@
     gap: 1rem;
 }
 
-.devolucao button .texto {
+.fichas-devolucao button .texto {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: .5rem;
 }
 
-.devolucao button .texto h2 {
+.fichas-devolucao button .texto h2 {
     color: var(--cor-principal);
     padding: 0 .5rem 0 0;
 }
 
-/* .filtro .barra-pes input{
+/* .barra-filtragem .barra-pes input{
     width: 35rem;
     height: 2.5rem;
     padding: .4rem;
@@ -107,7 +112,7 @@
     outline: none;
 }
 
-.filtro .barra-pes button[type="submit"]{
+.barra-filtragem .barra-pes button[type="submit"]{
     background-color: var(--cor-principal);
     border: none;
 
