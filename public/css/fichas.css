@@ -2,7 +2,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 .barra-filtragem{
-    z-index: -2;
     display: flex;
     flex-direction: row;
 

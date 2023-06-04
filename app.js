@@ -26,19 +26,6 @@ app.get('/estatisticas', (req, res) => {
     // res.render('tela_fichas');
 })
 
-AddLivro.findAll({
-    where:{
-        N_DE_ORDEM: 690,
-}},
-(err, data) => {
-    if (err) {
-        console.log(err)
-    }
-    else {
-        console.log(data)
-    }
-})
-
 // SERVER 
 app.listen(PORT, () => {
     console.log(`O servidor agora está rodando em: http://localhost:${PORT}` );
