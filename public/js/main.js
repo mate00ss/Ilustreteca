@@ -62,8 +62,8 @@ menu_button.addEventListener('click', function() {
 
 
 function navigate(target) {
-    var url = document.location.toString()
-    url = url.slice(0,22)
-    console.log(url)
-    document.location = `${url}${target}`
+    var url = location.href;
+    base_url = url.split("/")[0];
+    
+    window.location.href = `${base_url}/${target}`;
 }

@@ -1,27 +1,18 @@
 {
-  "dependencies": {
-    "ejs": "^3.1.9",
-    "express": "^4.18.2",
-    "luxon": "^3.3.0",
-    "sequelize": "^6.29.3",
-    "sqlite3": "^5.1.6"
-  },
-  "name": "ilustreteca",
-  "description": "WebApp voltado para gerenciamento de bibliotecas",
+  "name": "ilustreteca-remake",
   "version": "0.0.1",
-  "main": "app.js",
+  "description": "WebApp voltado para gerenciamento de bibliotecas.",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "commonjs",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/matss00/Ilustreteca.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/matss00/Ilustreteca/issues"
-  },
-  "homepage": "https://github.com/matss00/Ilustreteca#readme"
+  "keywords": [],
+  "author": "Mateus da Silva Pereira",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
 }
