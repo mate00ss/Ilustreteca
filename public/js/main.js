@@ -1,6 +1,6 @@
 // Menu de opções //
 let menu_button = document.querySelector('#nav-button');
-let opt_buttons_div = document.querySelector('.opt-buttons-div');
+let opt_buttons_div = document.querySelector('.options-div');
 let opt_buttons = document.querySelectorAll('.opt-buttons');
 let atalho = document.querySelector('.atalho')
 
@@ -10,10 +10,12 @@ menu_button.addEventListener('click', function() {
         menu_button.style.height = "100%"
         menu_button.style.width = "100%"
         menu_button.style.borderRadius = "0"
+        menu_button.style.border = ".15rem solid #FFF0"
+        menu_button.style.backgroundColor = "var(--cor-borda-botao)"
         
         //ABRINDO O MENU DE OPÇÕES
         opt_buttons_div.style.display = "flex"
-        opt_buttons_div.style.animation = "opt-buttons-div-open .5s ease-out 0s 1 forwards";
+        opt_buttons_div.style.animation = "options-div-open .5s ease-out 0s 1 forwards";
 
         //OPACIDADE DOS BOTÕES
         for (let i = 0; i < opt_buttons.length; i++) {
@@ -30,9 +32,11 @@ menu_button.addEventListener('click', function() {
         menu_button.style.height = "3rem"
         menu_button.style.width = "10rem"
         menu_button.style.borderRadius = ".8rem"
-        
+        menu_button.style.border = ".15rem solid var(--cor-borda-botao)"
+        menu_button.style.backgroundColor = "#FFF0"
+
         //FECHANDO O MENU DE OPÇÕES
-        opt_buttons_div.style.animation = "opt-buttons-div-close .5s ease-out 0s 1 forwards";
+        opt_buttons_div.style.animation = "options-div-close .5s ease-out 0s 1 forwards";
 
         //OPACIDADE DOS BOTÕES
         for (let i = 0; i < opt_buttons.length; i++) {
@@ -58,5 +62,8 @@ menu_button.addEventListener('click', function() {
 
 
 function navigate(target) {
-    document.location = `${document.baseURI}${target}`
+    var url = location.href;
+    base_url = url.split("/")[0];
+    
+    window.location.href = `${base_url}/${target}`;
 }
