@@ -1,186 +1,138 @@
 /* Definições gerais do site (Resetar estilo, Definir aparências gerais de alguns elementos, etc..) */
-@import url("./fonts.css");
-@import url("./animations.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("fonts.css");
+
 
 :root {
     /* Variáveis, usar 'var()' para definir cores do site mais facilmente */
     --cor-principal: #1A9053;
     --cor-secundaria: #E9792D;
+    --cor-borda-botao: #71c89a;
     --cor-destaque: ;
     --cor-fundo: #F99;
-    --fundo-ficha-normal: #C7E6C7;
-    --fundo-ficha-atraso: #F6D2B8; 
+    --cor-botao-nav: #00BF63;
+    --cor-verde-clara: #C7E6C7;
+    /* --fundo-ficha-normal: #C7E6C7;
+    --fundo-ficha-atraso: #F6D2B8;  */
     --cor-botao-ficha-normal: #;
 }
 
 
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/') format('woff2'),
-        url('../fonts/Butler-UltraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler-Medium.woff2') format('woff2'),
-        url('../fonts/Butler-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler-Light.woff2') format('woff2'),
-        url('../fonts/Butler-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler-Black.woff2') format('woff2'),
-        url('../fonts/Butler-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler-Bold.woff2') format('woff2'),
-        url('../fonts/Butler-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler-ExtraBold.woff2') format('woff2'),
-        url('../fonts/Butler-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler.woff2') format('woff2'),
-        url('../fonts/Butler.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@keyframes opt-buttons-div-open {
+@keyframes options-div-open {
     0% {
         height: 0;
         width: 10rem;
-        margin: -2rem 0 0 2rem;
-        z-index: -1;
+        margin: 0rem 0 0 2rem;
+        z-index: 1;
 
-        border-radius: .5rem;
+        border-radius: 0 0 1rem 1rem;
+        gap: 0;
     }
     100% {
-        height: calc(100% - 4rem);
+        height: 100vh;
         width: 14rem;
         margin: 0;
-        z-index: 0;
 
         border-radius: 0;
+        gap: 1.5rem;
     }
 }
 
-@keyframes opt-buttons-div-close {
+@keyframes options-div-close {
     0% {
-        height: calc(100% - 4rem);
+        height: 100vh;
         width: 14rem;
         margin: 0;
-        z-index: 0;
 
         border-radius: 0;
+        gap: 1.5rem;
     }
     100% {
-        z-index: -1;
         height: 0;
         width: 10rem;
         margin: -2rem 0 0 2rem;
 
-        border-radius: .5rem;
+        border-radius: 0 0 1rem 1rem;
+        gap: 0rem;
     }
 }
 
 
 
 * {
-box-sizing: border-box;
-padding: 0;
-margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 
-font-family: 'Butler';
-color: #FFF;
+    font-family: 'Open Sans Regular';
+    color: #FFF;
 }
 
 body {
-height: 100%;
+    height: 100%;
 
-background: url("../images/backgrounds/aiaiai.png");
-background-repeat: no-repeat;
-background-size: cover;
+    background: url(../images/background/tela_fichas.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
 }
 /* Fim da seção */
 
 /* Nav bar */
 .nav-bar{
-height: 4rem;
-width: 100%;
-background-color: var(--cor-principal);
+    position: relative;
+    z-index: 2;
+    height: 4rem;
+    width: 100%;
+    background-color: var(--cor-principal);
 
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 } 
 
 .nav-bar .nav-opcoes {
-height: 100%;
-width: 14rem;
+    height: 100%;
+    width: 14rem;
 
-display: flex;
-justify-content: center;
-place-items: center;
-margin: 0 .5rem 0 0;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin: 0 .5rem 0 0;
 }   
 
-.nav-bar .nav-opcoes button {
-width: 10rem;
-height: 3rem;
-font-size: 15pt;
+.nav-bar .nav-opcoes #nav-button {
+    width: 10rem;
+    height: 3rem;
+    font-size: 15pt;
 
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: flex-start;
-gap: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.1rem;
 
-background-color: #2f58e0;
-color: #FFF;
+    background-color: #FFF0;
+    color: #FFF;
 
-border: none;
-border-radius: .8rem;
+    border: .15rem solid var(--cor-borda-botao);
+    border-radius: .8rem;
 
-transition: .5s;
-animation-timing-function: ease-out;
+    transition: .5s;
+    animation-timing-function: ease-out;
 }
 
 .nav-bar .nav-opcoes button:hover{
-box-shadow:  0rem 0rem 1rem #2f58e0;
-font-size: 15.2pt;
+    box-shadow:  0rem 0rem 1rem rgba(255, 255, 255, .3);
+    font-size: 15.2pt;
 } 
 
 .nav-bar .nav-opcoes i {
-font-size: 2rem;
-color: #FFF;
-padding: 0 0 0 .5rem;
+    font-size: 2rem;
+    color: #FFF;
+    padding: 0 0 0 .5rem;
 }
 /* Logo */
 
@@ -206,44 +158,53 @@ padding: 0 0 0 .5rem;
 
     border-radius: .4rem;
     border: none;
-    background-color: #2f58e0;
+    background-color: var(--cor-botao-nav);
 }
 
 /* Opções da nav */
 
-.opt-buttons-div {
+.options-div {
     position: absolute;
+    top: 4rem;
     width: 14rem;
     height: 0;
     
     display: none;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 
-    background-color: #2f58e0;
+    background-color: var(--cor-borda-botao);
     overflow: hidden;
 }
 
-.opt-buttons-div .opt-buttons{
+.options-div .opt-buttons{
     opacity: 0;
 
     width: 12rem;
     height: 4rem;
+    margin: 1.5rem 0 0 0;
 
-    background-color: #2748b4;
+    background-color: var(--cor-botao-nav);
 
     border-radius: .5rem;
-    border: none;
+    border: 2px solid var(--cor-principal);
     font-size: 1.1em;
 
     transition: .5s;
+
+    color: #FFF;
 }
 
-.opt-buttons-div .opt-buttons:hover{
+.options-div .opt-buttons:hover{
     cursor: pointer;
 }
 
-.opt-buttons-div .opt-buttons a {
+.options-div .opt-buttons a {
     text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
 }
