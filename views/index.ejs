@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR" style="height: 100%;">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilustreteca - Início</title>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <%- include('partials/head.ejs') %> 
+
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/main.js" defer></script>
+    <title>Ilustreteca - Início</title>
 </head>
 <body id="body">
     <%- include('partials/nav_bar.ejs') %>
-    <section class="atalho">
+    <div class="main">
         <div class="abas">
-            <button class="adli">
-                <h2>Adicionar Ficha</h2>
+            <button class="adicionar-livro-button" data-active="true" onclick="changeIndexTabTo('addFicha')">
+                <h2><i class="bi bi-journal-text"></i> Adicionar Ficha</h2>
             </button>
-            <button class="adfi">
-                <h2>Adicionar Livro</h2>
+            <button class="adicionar-ficha-button" data-active="false" onclick="changeIndexTabTo('addLivro')">
+                <h2><i class="bi bi-book-half"></i> Adicionar Livro</h2>
             </button>
         </div>
         
-        <div>
-            <form action="#">
-            <span style="color: black;">Nome:</span>
-            <input type="text" placeholder="Exemplo: José Maria Escrivá" style="color:black">
-            <span style="color: black;">Email:</span>
-            <input type="text" placeholder="Exemplo@gmail.com" style="color:black">
-            </form>
+        <div class="forms" data-state="addFicha">
+            <div class="addFicha">
+                <form action="#">
+                    <span style="color: black;">Nome:</span>
+                    <input type="text" placeholder="Exemplo: José Maria Escrivá" style="color:black">
+                    <span style="color: black;">Email:</span>
+                    <input type="text" placeholder="Exemplo@gmail.com" style="color:black">
+                </form>
+            </div>
+
+            <div class="addLivro">
+                <h1>[PLACEHOLDER]</h1>
+                <img src="https://media.tenor.com/hGlXXpLIlq0AAAAi/neco-arc-taunt.gif" alt="placeholder">
+            </div>
         </div>
-    </section>
+    </div>
+
+    <script src="js/indexScript.js"></script>
 </body>
 </html>

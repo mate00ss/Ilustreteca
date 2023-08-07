@@ -1,13 +1,38 @@
 @import url("./style.css");
 
-.atalho {
+.main {
     position: relative;
     height: calc(100% - 6rem);
     width: calc(100% - 2rem);
     margin: 1rem;
-    z-index: -2;
     
     background-color: #a8a8a8;
     transition: .5s;
 }
-/* Fim da nav bar */
+
+.abas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.abas button {
+    border: none;
+    height: 2.5rem;
+}
+
+.abas button[data-active="true"] {
+    background-color: #a5f;
+}
+
+.forms {
+    position: relative;
+    height: 100%;
+}
+
+.forms > div {
+    width: 100%;
+    height: calc(100% - 2.5rem);
+    position: absolute;
+    background-color: #a5f;
+}
