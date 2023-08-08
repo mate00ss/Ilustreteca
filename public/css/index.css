@@ -5,7 +5,7 @@
     height: calc(100% - 6rem);
     width: calc(100% - 2rem);
     margin: 1rem;
-    
+    border-radius: 1rem;
     background-color: #a8a8a8;
     transition: .5s;
 }
@@ -19,10 +19,11 @@
 .abas button {
     border: none;
     height: 2.5rem;
+    background-color: var(--cor-inativa);
 }
 
 .abas button[data-active="true"] {
-    background-color: #a5f;
+    background-color: var(--fundo-ficha-normal);
 }
 
 .forms {
@@ -34,5 +35,13 @@
     width: 100%;
     height: calc(100% - 2.5rem);
     position: absolute;
-    background-color: #a5f;
+    background-color: var(--fundo-ficha-normal);
+}
+
+.forms .add-ficha {
+    z-index: 1;
+}
+
+.forms .add-livro {
+    z-index: 0;
 }
