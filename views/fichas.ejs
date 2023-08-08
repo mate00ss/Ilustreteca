@@ -11,59 +11,61 @@
     
     <%- include('partials/nav_bar.ejs') %> 
 
-    <div class="barra-filtragem">
-        <form action="#" class="filtro-form">
-            <select name="filter" id="filter" class="filter">
-                <option value="" disabled hidden></option>
-                
-                <option value="">
-                    <span>Sem filtro</span>
-                </option>
-                
-                <option value="comunidade">
-                    <span>Comunidade</span>
-                </option>
-                
-                <option value="alunos">
-                    <span>Alunos</span>
-                </option>
-                
-                <option value="professores">
-                    <span>Professores</span>
-                </option>
-            </select>
-        </form>
-
-        <div class="barra-pes">
-            <input id="barra-pes" name="barra-pes" type="text" oninput="searchCards()">
-            <i class="bi bi-search"></i>
-        </div>
-    </div>
-
-    <div class="fichas-all">
-        <div class="fichas-devolucao">
-            <button>
-                <i class="bi bi-caret-down-fill"></i>
-                <div class="texto">
-                    <i class="bi bi-calendar-week"></i>
-                    <h2>DEVOLUÇÕES</h2>
-                </div>
-            </button>
+    <div class="main">
+        <div class="barra-filtragem">
+            <form action="#" class="filtro-form">
+                <select name="filter" id="filter" class="filter">
+                    <option value="" disabled hidden></option>
+                    
+                    <option value="">
+                        <span>Sem filtro</span>
+                    </option>
+                    
+                    <option value="comunidade">
+                        <span>Comunidade</span>
+                    </option>
+                    
+                    <option value="alunos">
+                        <span>Alunos</span>
+                    </option>
+                    
+                    <option value="professores">
+                        <span>Professores</span>
+                    </option>
+                </select>
+            </form>
     
-            <div class="cards-box">
-                <h4>Lorem ipsum dolor sit.</h4>
+            <div class="barra-pes">
+                <input id="barra-pes" name="barra-pes" type="text" oninput="searchCards()">
+                <i class="bi bi-search"></i>
             </div>
         </div>
     
-        <div class="fichas-atraso">
-            <button>
-                <i class="bi bi-caret-down-fill"></i>
-                <i class="bi bi-clock-fill"></i>
-                ATRASOS
-            </button>
-    
-            <div class="cards-box">
-                <h2>Lorem ipsum dolor sit.</h2>
+        <div class="fichas-all">
+            <div class="fichas-devolucao">
+                <button>
+                    <i class="bi bi-caret-down-fill"></i>
+                    <div class="texto">
+                        <i class="bi bi-calendar-week"></i>
+                        <h2>DEVOLUÇÕES</h2>
+                    </div>
+                </button>
+        
+                <div class="cards-box">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                </div>
+            </div>
+        
+            <div class="fichas-atraso">
+                <button>
+                    <i class="bi bi-caret-down-fill"></i>
+                    <i class="bi bi-clock-fill"></i>
+                    ATRASOS
+                </button>
+        
+                <div class="cards-box">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                </div>
             </div>
         </div>
     </div>

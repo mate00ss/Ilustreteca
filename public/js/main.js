@@ -2,7 +2,7 @@
 let menu_button = document.querySelector('#nav-button');
 let opt_buttons_div = document.querySelector('.options-div');
 let opt_buttons = document.querySelectorAll('.opt-buttons');
-let atalho = document.querySelector('.atalho')
+let atalho = document.querySelector('.main')
 
 menu_button.addEventListener('click', function() {
     if (menu_button.style.height != "100%") {

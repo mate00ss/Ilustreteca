@@ -1,12 +1,10 @@
 @import url("./style.css");
 
-.atalho {
+.main {
     position: relative;
     height: calc(100% - 6rem);
     width: calc(100% - 2rem);
     margin: 1rem;
-    z-index: -2;
-    
-    background-color: #a8a8a8;
+    background-color: var(--fundo-ficha-normal);
     transition: .5s;
 }

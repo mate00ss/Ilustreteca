@@ -82,7 +82,7 @@ body {
 /* Nav bar */
 .nav-bar{
     position: relative;
-    z-index: 2;
+    z-index: 3;
     height: 4rem;
     width: 100%;
     background-color: var(--cor-principal);
