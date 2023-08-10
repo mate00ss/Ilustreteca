@@ -1,3 +1,10 @@
 # Ilustreteca
 
-WebApp voltado para gerenciamento de bibliotecas  
+## Descrição
+WebApp criado para gerenciamento de bibliotecas
+
+
+## Pré-requisitos
+
+
+## Instalação
