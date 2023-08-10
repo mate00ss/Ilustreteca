@@ -1,5 +1,10 @@
 # Ilustreteca
 
-WebApp voltado para gerenciamento de bibliotecas.
+## Descrição
+WebApp criado para gerenciamento de bibliotecas
 
-Ilustreteca é um sistema para gerenciamento de bibliotecas construído usando Node.js
+
+## Pré-requisitos
+
+
+## Instalação
