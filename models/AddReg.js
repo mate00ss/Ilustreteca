@@ -96,11 +96,4 @@ const AddRegComunidade = sql.define('empComunidade', {
     timestamps: false,
 });
 
-
-// CÓDIGO PARA ALTERAÇÕES POSTERIORES
-
-AddRegAluno.sync();
-AddRegProfessor.sync();
-AddRegComunidade.sync();
-
 module.exports = { AddRegAluno, AddRegProfessor, AddRegComunidade };
