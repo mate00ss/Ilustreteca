@@ -67,3 +67,7 @@ function navigate(target) {
     
     window.location.href = `${base_url}/${target}`;
 }
+
+function openConfigMenu() {
+    
+}

@@ -1,15 +1,5 @@
 @import url("./style.css");
 
-.main {
-    position: relative;
-    height: calc(100% - 6rem);
-    width: calc(100% - 2rem);
-    margin: 1rem;
-    border-radius: 1rem;
-    background-color: #000;
-    transition: .5s;
-}
-
 .abas {
     width: 100%;
     display: grid;
@@ -25,20 +15,20 @@
 }
 
 .abas button[data-active="true"] {
-    background-color: #000;
+    background-color: #1A905380;
     box-shadow: 0px 3px 10px #0002;
 }
 
 .forms {
     position: relative;
-    height: 100%;
+    height: calc(100% - 2.5rem);
 }
 
 .forms > div {
     width: 100%;
-    height: calc(100% - 2.5rem);
+    height: 100%;
     position: absolute;
-    background-color: #000;
+    background-color: #1A905380;
     padding: 0.5rem;
 }
 

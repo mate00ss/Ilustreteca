@@ -1,15 +1,6 @@
 @import url("style.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-.main {
-    position: relative;
-    height: calc(100% - 6rem);
-    width: calc(100% - 2rem);
-    margin: 1rem;
-    background-color: var(--fundo-ficha-normal);
-    transition: .5s;
-}
-
 .barra-filtragem{
     display: flex;
     flex-direction: row;

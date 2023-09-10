@@ -77,12 +77,22 @@ body {
     background-attachment: fixed;
 
 }
+
+.main {
+    position: relative;
+    height: calc(100% - 5rem);
+    width: calc(100% - 1rem);
+    margin: .5rem;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
 /* Fim da seção */
 
 /* Nav bar */
 .nav-bar{
     position: relative;
-    z-index: 3;
+    z-index: 4;
     height: 4rem;
     width: 100%;
     background-color: var(--cor-principal);
@@ -170,7 +180,7 @@ body {
     top: 4rem;
     width: 14rem;
     height: 0;
-    z-index: 2;
+    z-index: 3;
     
     display: none;
     flex-direction: column;
@@ -207,7 +217,39 @@ body {
     text-decoration: none;
 }
 
-html, body{
-    height: 100%;
-    overflow-y: hidden;
+.config-menu {
+    width: 16rem;
+    height: 18rem;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 3;
+    right: 1rem;
+    top: 5rem;
+    
+    box-shadow: 0 0 20px #0005;
+    border-radius: .5rem .3rem .5rem .5rem;
+
+    background-color: var(--cor-principal);
+}
+
+.config-menu .config-seta {
+    height: 10%;
+    position: absolute;
+    top: -9.5%;
+    right: 0.5%;
+}
+
+.config-menu .option-list {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.config-menu .option-list button {
+    padding: 0.3rem;
+    border: 2px solid #5558;
+    border-radius: .5rem;
+    background-color: #af5;
+    color: #000;
+    font-size: 12pt;
 }
