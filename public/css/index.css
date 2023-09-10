@@ -32,8 +32,11 @@
     padding: 0.5rem;
 }
 
-.forms .add-ficha {
+.forms .add-ficha *{
+    display: flex;
     z-index: 1;
+    flex-direction: column;
+
 }
 
 .forms .add-livro {

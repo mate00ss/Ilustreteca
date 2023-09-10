@@ -26,27 +26,17 @@ app.get("/fichas", async function(req, res) {
 })
 
 app.post("/fichas", async function(req, res) {
-    fichaAluno = Object.create(Aluno);
-
-    fichaAluno.nome = req.data.nome; 
-    fichaAluno.curso = req.data.curso;
-    fichaAluno.serie = req.data.serie;
-    fichaAluno.email = req.data.email;
-    fichaAluno.municipio = req.data.municipio;
-    fichaAluno.livro = req.data.livro;
-    fichaAluno.data_emprestimo = req.data.data_emprestimo;
-    fichaAluno.data_entrega = req.data.data_entrega;
-
     AddRegAluno.create({
-        nome: fichaAluno.nome,
-        curso: fichaAluno.curso,
-        serie: fichaAluno.serie,
-        email: fichaAluno.email,
-        municipio: fichaAluno.municipio,
-        livro: fichaAluno.livro,
-        data_emprestimo: fichaAluno.data_emprestimo,
-        data_entrega: fichaAluno.data_entrega,
+        nome: req.data.nome,
+        curso: req.data.curso,
+        serie: req.data.serie,
+        email: req.data.email,
+        municipio: req.data.municipio,
+        livro: req.data.livro,
+        data_emprestimo: req.data.data_emprestimo,
+        data_entrega: req.data.data_entrega,
     });
+
 })
 
 app.get("/livros", async function(req, res) {

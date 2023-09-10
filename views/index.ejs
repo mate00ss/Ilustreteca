@@ -24,10 +24,37 @@
             <div class="add-ficha">
                 <div class="add-ficha-aluno">
                     <form action="#">
-                        <span style="color: black;">Nome:</span>
-                        <input type="text" placeholder="Exemplo: José Maria Escrivá" style="color:black">
-                        <span style="color: black;">Email:</span>
-                        <input type="text" placeholder="Exemplo@gmail.com" style="color:black">
+                        <label for="nome" >Nome: </label>
+                        <input name="nome" type="text" placeholder="Exemplo: José Maria Escrivá" >
+                        
+                        <label for="email" >Email: </label>
+                        <input name="email" type="text" placeholder="Exemplo@gmail.com" >
+                        
+                        <label for="curso" >Curso: </label>
+                        <select name="curso">
+                            <option disabled hidden selected value="">Curso: </option>
+                            <option value="INFO">INFORMÁTICA</option>
+                            <option value="FINA">FINANÇAS</option>
+                            <option value="AGRO">AGRONEGÓCIO</option>
+                            <option value="EDIF">EDIFICAÇÕES</option>
+                        </select>
+                        
+                        <label for="serie" >Email: </label>
+                        <select name="serie">
+                            <option disabled hidden selected value="">Série: </option>
+                            <option value="1">1ª Série</option>
+                            <option value="2">2ª Série</option>
+                            <option value="3">3ª Série</option>
+                        </select>
+                        
+                        <label for="municipio" >Nome: </label>
+                        <input name="municipio" type="text" placeholder="Exemplo: José Maria Escrivá" >
+                        
+                        <label for="livro" >Email: </label>
+                        <input name="livro" type="text" placeholder="Exemplo@gmail.com" >
+                        
+                        <label for="data-emprestimo" >Data de empréstimo: </label>
+                        <input name="data-emprestimo" type="date" >
                     </form>
                 </div>
                 
@@ -42,7 +69,6 @@
 
             <div class="add-livro">
                 <h1>[PLACEHOLDER]</h1>
-                <img src="https://media.tenor.com/hGlXXpLIlq0AAAAi/neco-arc-taunt.gif" alt="placeholder">
             </div>
         </div>
     </div>
